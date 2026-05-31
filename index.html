@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AES Encryption Sandbox — Glassmorphism Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glass-bg"></div>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo-row">
+                <span class="logo-emoji">🔐</span>
+                <div class="title-col">
+                    <h1>AES Encryption Sandbox</h1>
+                    <p class="tagline">AES text encryption and decryption workbench demonstrating state encryption.</p>
+                </div>
+            </div>
+            <div class="badge">security</div>
+        </header>
+
+        <main class="workspace-card">
+            
+            <div class="input-group">
+                <label>Text to Encrypt/Decrypt</label>
+                <textarea id="aes-text" placeholder="Enter sensitive information..."></textarea>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0;">
+                <div>
+                    <label>Secret Key</label>
+                    <input type="text" id="aes-key" value="secret_passphrase">
+                </div>
+                <div style="display: flex; align-items: flex-end; gap: 12px;">
+                    <button class="btn" onclick="aesEncrypt()">Encrypt</button>
+                    <button class="btn btn-secondary" onclick="aesDecrypt()">Decrypt</button>
+                </div>
+            </div>
+            <div class="input-group">
+                <label>Result Buffer</label>
+                <textarea id="aes-result" readonly placeholder="Output hex or decrypted string..."></textarea>
+            </div>
+        
+        </main>
+        
+        <footer class="app-footer">
+            <p>Created as a premium portfolio piece by <a href="https://github.com/VARSHAN69" target="_blank">@VARSHAN69</a></p>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
