@@ -38,7 +38,7 @@ version: 1.0
 type: Repository
 author: VarshuAi
 description: >
-  AES text encryption and decryption workbench demonstrating state encryption.
+  name: aes-encryption-sandbox version: 1.0 type: Repository author: VarshuAi description: >   AES text encryption and decryption workbench demonstrating state encryption. primary_tech: CSS
 primary_tech: CSS
 ```
 
