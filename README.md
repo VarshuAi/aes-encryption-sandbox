@@ -1,3 +1,4 @@
+<!-- VARSHUAI-REDESIGN-v2 -->
 # ⚡ Aes Encryption Sandbox
 
 > **AES text encryption and decryption workbench demonstrating state encryption.**  
